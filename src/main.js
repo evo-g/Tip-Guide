@@ -17,10 +17,4 @@ function calculateTip(event) {
   calculateTotal(billValue, tipTotal)
 }
 
-function clearForm() {
-  document.getElementById('tipForm').reset()
-}
-
-
 document.addEventListener('submit', calculateTip);
-document.addEventListener('onclick', clearForm)
