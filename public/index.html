@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Guide</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Tip Guide</h1>
+    <form action="" id="tipForm">
+      <label for="bill">Bill</label>
+      <input id='bill' type="text" name="bill" placeholder="100" required>
+      <label for="tip">Tip</label>
+      <select id='tip' type="number" name="tip" required>
+        <option value="">Select a Tip Percentage</option>
+        <option value=".10">10 %</option>
+        <option value=".12">12 %</option>
+        <option value=".15">15 %</option>
+        <option value=".18">18 %</option>
+        <option value=".20">20 %</option>
+      </select>
+      <button type="submit">Submit</button>
+      <!-- <input type="button" value="reset-form" > -->
+    </form>
+    <h2 id="calculatedTip"></h2>
+    <h2 id="calculatedTotal"></h2>
+    <script src="../src/main.js" charset="utf-8"></script>
+  </main>
+</body>
+</html>
