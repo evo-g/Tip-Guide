@@ -1,18 +1,23 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
 body {
   margin: 0 auto;
   font-family: Roboto,"Helvetica Neue",sans-serif;
   font-size: 14px;
   background-color: #E3F2FD;
+  overflow: auto;
 }
 
-main{
+main {
   flex-direction: column;
   display: flex;
   margin: 0 auto;
   text-align: center;
   background-color: #E3F2FD;
-  height: 100vh;
+  height: 75vh;
   justify-content: center;
+  
 }
 
 form {
@@ -25,14 +30,14 @@ form {
 
 form input,select {
   margin: 1rem;
-  width: 50%;
+  width: 65%;
 }
 
 form button {
   background-color: #C5CAE9;
   border-radius: .5rem;
   border: none; 
-  padding: 6px 10px;
+  padding: 8px 16px;
 }
 
 form button:focus {
@@ -42,6 +47,7 @@ form button:focus {
 }
 
 form button:hover {
+  cursor: pointer;
   color: #fff;
   background-color: #64B5F6;
 }
