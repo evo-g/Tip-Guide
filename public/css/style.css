@@ -1,6 +1,10 @@
 html {
   -webkit-font-smoothing: antialiased;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   font-family: Roboto,"Helvetica Neue",sans-serif;
@@ -17,7 +21,16 @@ main {
   background-color: #E3F2FD;
   height: 75vh;
   justify-content: center;
-  
+}
+
+h1 {
+  z-index: 15;
+  color: #424242;
+}
+
+h2 {
+  z-index: 15;
+  color: #616161;
 }
 
 form {
@@ -28,21 +41,27 @@ form {
   margin: 0 auto;
 }
 
+form label {
+  color: #424242;
+}
+
 form input,select {
   margin: 1rem;
   width: 65%;
 }
 
 form button {
-  background-color: #C5CAE9;
+  background-color: #1762A7;
+  color: #fff;
   border-radius: .5rem;
   border: none; 
-  padding: 8px 16px;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
 }
 
 form button:focus {
   outline: none;
-  border: 2px solid #5C6BC0;
+  border: .5px solid #5C6BC0;
   border-radius: .5rem;
 }
 
@@ -50,4 +69,31 @@ form button:hover {
   cursor: pointer;
   color: #fff;
   background-color: #64B5F6;
+}
+
+.circle-1 {
+  background-image: url(../images/coin.png);
+  background-size: contain;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: #5C6BC0;
+  bottom: 15vw;
+  left: 10vw;
+  z-index: 0;
+}
+
+.circle-2 {
+  background-image: url(../images/gold-coin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  bottom: 28vw;
+  right: 15vw;
+  z-index: 0;
 }
