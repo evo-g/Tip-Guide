@@ -71,7 +71,7 @@ form button:hover {
   background-color: #64B5F6;
 }
 
-.circle-1 {
+/* .circle-1 {
   background-image: url(../images/coin.png);
   background-size: contain;
   position: absolute;
@@ -96,4 +96,4 @@ form button:hover {
   bottom: 28vw;
   right: 15vw;
   z-index: 0;
-}
+} */
